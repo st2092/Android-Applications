@@ -39,7 +39,7 @@ public class MainActivity extends ActionBarActivity {
         else
         {
             points--;
-            Toast.makeText(this, "You are STUPID!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show();
         }
 
         TextView points_view = (TextView) findViewById(R.id.points_text_view);
