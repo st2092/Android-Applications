@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:text="Rock, Paper, Scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view"
+        android:layout_alignParentTop="true"
+        android:textSize="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick your choice."
+        android:id="@+id/text_view2"
+        android:layout_below="@+id/text_view"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/rock_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rock"
+        android:onClick="rock_button_pressed"
+        android:layout_alignBottom="@+id/scissors_button"
+        android:layout_toLeftOf="@+id/paper_button"
+        android:layout_toStartOf="@+id/paper_button" />
+
+    <ImageButton
+        android:id="@+id/paper_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paper"
+        android:onClick="paper_button_pressed"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/scissors_button"
+        android:src="@drawable/scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="scissors_button_pressed"
+        android:layout_alignTop="@+id/paper_button"
+        android:layout_toRightOf="@+id/paper_button"
+        android:layout_toEndOf="@+id/paper_button" />
+
+</RelativeLayout>
