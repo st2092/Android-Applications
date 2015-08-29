@@ -83,53 +83,6 @@ public class MainActivity extends ActionBarActivity {
         previous_id = view.getId(); // set previous id for next use
         int id = view.getId();
         update_character_display(id);
-        /*
-        // determines which character was chosen and set the image to corresponding character
-        if (view.getId() == R.id.yusuke) // yusuke
-        {
-            image_button.setImageResource(R.drawable.yusuke);
-            previous_radio_button = (RadioButton) findViewById(R.id.yusuke);
-            previous_radio_button.setChecked(true);
-            previous_choice_group = 1;
-        }
-        else if (view.getId() == R.id.kuwabara) // kuwabara
-        {
-            image_button.setImageResource(R.drawable.kuwabara);
-            previous_radio_button = (RadioButton) findViewById(R.id.kuwabara);
-            previous_radio_button.setChecked(true);
-            previous_choice_group = 1;
-        }
-        else if (view.getId() == R.id.hiei) // hiei
-        {
-            image_button.setImageResource(R.drawable.hiei);
-            previous_radio_button = (RadioButton) findViewById(R.id.hiei);
-            previous_radio_button.setChecked(true);
-            previous_choice_group = 1;
-        }
-        else if (view.getId() == R.id.kurama) // kurama
-        {
-            image_button.setImageResource(R.drawable.kurama);
-            previous_radio_button = (RadioButton) findViewById(R.id.kurama);
-            previous_radio_button.setChecked(true);
-            previous_choice_group = 2;
-        }
-        else if (view.getId() == R.id.keiko) // keiko
-        {
-            image_button.setImageResource(R.drawable.keiko);
-            previous_radio_button = (RadioButton) findViewById(R.id.keiko);
-            previous_radio_button.setChecked(true);
-            previous_choice_group = 2;
-        }
-        else if (view.getId() == R.id.botan) //botan
-        {
-            image_button.setImageResource(R.drawable.botan);
-            previous_radio_button = (RadioButton) findViewById(R.id.botan);
-            previous_radio_button.setChecked(true);
-            previous_choice_group = 2;
-        }
-        // adjust image to fit button
-        image_button.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-        */
     }
 
     /*
