@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.sony.madlibs.FillInActivity">
+
+    <!-- Instruction -->
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/instruction_fill_in_text_view"
+        android:text="@string/instruction_fill_in_activity"
+        android:textSize="24sp"/>
+
+    <!-- Text View showing number of words left -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/words_left_text_view"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/instruction_fill_in_text_view"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Edit Text for taking in user input -->
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/user_input_edit_text"
+        android:hint=""
+        android:layout_below="@+id/words_left_text_view"
+        android:inputType="text"/>
+
+    <!-- Confirmation button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ok_button"
+        android:layout_toRightOf="@+id/user_input_edit_text"
+        android:layout_below="@+id/words_left_text_view"
+        android:text="Ok"
+        android:clickable="true"
+        android:onClick="set_placeholder_with_input" />
+
+    <!-- Hint -->
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/hint_text_view"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_below="@id/ok_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
